@@ -59,10 +59,6 @@ public class Game {
 	
 	public static void main(String[] args) {
 		
-		//randomAttack.randInt(1,3);
-		
-		//randomSequence kev = new randomSequence();
-		
 		Avatar p1 = new Avatar();
 		Avatar p2 = new Avatar();
 		
