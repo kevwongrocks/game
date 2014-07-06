@@ -11,10 +11,10 @@ public class Game {
 		Avatar p2 = new Avatar();
 		
 		p1.setHealth(100);
-		p1.setElement("Water");
+		//p1.setElement("Water");
 		
 		p2.setHealth(100);
-		p2.setElement("Water");
+		//p2.setElement("Water");
 		
 		for(int k = 0; k <= 10; k++) {
 			
@@ -107,37 +107,7 @@ public class Game {
 					} else {
 						
 						// Tie - Do damage based on Avatar Element
-						if((p1.getElement() == "Water") && (p2.getElement() == "Earth") ||
-							(p1.getElement() == "Fire") && (p2.getElement() == "Water") || 
-							(p1.getElement() == "Earth") && (p2.getElement() == "Fire")) {
-							
-							p1.setHealth(p1.getHealth() - tieDamage);
-							System.out.println("p2 does " + tieDamage + " Damage :: p1 Health = " + Integer.toString(p1.getHealth()));
-							
-							// check health
-							if(p1.getHealth() <= 0) {
-								System.out.println("Player 1 DEAD");
-								break;
-							}
-							
-						} else if((p2.getElement() == "Water") && (p1.getElement() == "Earth") ||
-							(p2.getElement() == "Fire") && (p1.getElement() == "Water") || 
-							(p2.getElement() == "Earth") && (p1.getElement() == "Fire")) {
-							
-							p2.setHealth(p2.getHealth() - tieDamage);
-							System.out.println("p1 does " + tieDamage + " Damage :: p2 Health = " + Integer.toString(p2.getHealth()));
-							
-							// check health
-							if(p2.getHealth() <= 0) {
-								System.out.println("Player 2 DEAD");
-								break;
-							}
-							
-						} else if(p1.getElement() == p2.getElement()){
-							
-							System.out.println("No Damage");
-							
-						}
+						System.out.println("No Damage");
 						
 					}
 					
