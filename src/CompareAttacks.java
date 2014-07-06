@@ -1,14 +1,14 @@
 
 public class CompareAttacks {
 
-	public static int[] checkWinner(int[] array1, int[] array2) {
+	public static int[] main(int[] array1, int[] array2) {
 		
 		int p1 = 0;
 		int p2 = 0;
 		int tie = 0;
 		int[] attackCheck = new int[9];
 		
-		for(int i = 0; i <= 8; i++) {
+		for(int i = 0; i <= attackCheck.length-1; i++) {
 			
 			if(array1[i] == array2[i]){
 				tie++;

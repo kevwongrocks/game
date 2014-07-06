@@ -10,7 +10,9 @@ public class Game {
 		p1.setHealth(100);
 		p2.setHealth(100);
 		
-		for(int k = 0; k <= 10; k++) {
+		int maxGames = 10;
+		
+		for(int k = 0; k <= maxGames; k++) {
 			
 			// If any players health goes below Zero stop the game
 			if((p1.getHealth() > 0) && (p2.getHealth() > 0)) {
@@ -20,11 +22,11 @@ public class Game {
 				System.out.println("");
 			
 				// Players Random Attack Sequence
-				p1.setAttack(RandomSequence.attackSequence());
-				p2.setAttack(RandomSequence.attackSequence());
+				p1.setAttack(RandomSequence.main());
+				p2.setAttack(RandomSequence.main());
 				
 				// Check Attack Sequence match Winner
-				int[] attackResult =  CompareAttacks.checkWinner(p1.getAttack(), p2.getAttack());
+				int[] attackResult =  CompareAttacks.main(p1.getAttack(), p2.getAttack());
 				
 				System.out.println("======== ATTACKS ==========");
 				System.out.println(Arrays.toString(p1.getAttack()) + ": p1");
@@ -32,11 +34,11 @@ public class Game {
 				
 				System.out.println("======== WINNERS ==========");
 				System.out.println(Arrays.toString(attackResult));
-				
+				System.out.println("");
 				System.out.println("======== DAMAGE ===========");
 				
 				// Do Attack Damage and Bonus Streak Damage
-				damage.doDamage(attackResult, p1, p2);
+				Damage.main(attackResult, p1, p2);
 				
 			} 
 		

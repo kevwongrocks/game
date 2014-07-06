@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class RandomAttack {
 	
-	public static int randInt(int min, int max) {
+	public static int main(int min, int max) {
 
 	    Random rand = new Random();
 

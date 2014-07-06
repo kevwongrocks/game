@@ -1,11 +1,11 @@
 public class RandomSequence {
 	
-	public static int[] attackSequence() {
+	public static int[] main() {
 		
 		int[] attack = new int[9];
 		
 		for(int i = 0; i <= 8; i++) {
-			attack[i] = RandomAttack.randInt(0, 2);
+			attack[i] = RandomAttack.main(0, 2);
 		}
 		
 		return attack;
