@@ -11,10 +11,7 @@ public class Game {
 		Avatar p2 = new Avatar();
 		
 		p1.setHealth(100);
-		//p1.setElement("Water");
-		
 		p2.setHealth(100);
-		//p2.setElement("Water");
 		
 		for(int k = 0; k <= 10; k++) {
 			
