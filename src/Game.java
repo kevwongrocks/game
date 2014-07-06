@@ -11,13 +11,11 @@ public class Game {
 	}
 	
 	public String getName() {
-		//System.out.println(name);
 		return name;
 	}
 
 	public void setName(String name) {
 		this.name = name;
-		//System.out.println("setName is " + name);
 	}
 	
 	public static int[] compareArrays(int[] array1, int[] array2) {
@@ -69,6 +67,8 @@ public class Game {
 		p2.setElement("Water");
 		
 		for(int k = 0; k <= 2; k++) {
+			
+			System.out.println("================== GAME #" + (k+1) + "========================");
 		
 			p1.setAttack(RandomSequence.attackSequence());
 			p2.setAttack(RandomSequence.attackSequence());
